@@ -2,24 +2,20 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Tasks from './Tasks';
+
 class App extends Component {
+
+  componentDidMount(){
+    
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <h1>Sample App</h1>
+        <Tasks idade="29" nome="Jonatan" />
+        <Tasks idade="21" nome="Cristiano" />
       </div>
     );
   }
